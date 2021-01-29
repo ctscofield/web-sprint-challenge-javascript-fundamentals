@@ -59,10 +59,10 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(arr, animalName, scientificName){
-    zooAnimals.forEach(animal_name, scientific_name)
-    return `name: ${animal_name}, scientific: ${scientific_name}`
-    
+  function animalNames(){
+    // const displayNames = zooAnimals.forEach(function(item)){
+    //   return `name: ${item.animal_name}, scientific: ${item.scientific_name}`;
+    // }
   }
   
 
@@ -107,28 +107,29 @@ const zooAnimals = [
   */
 
   function consume(a, b, cb){
-    // let cb = a + b;
-    // return cb;
+    return cb(a,b);
   }
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(a, b){
+  let sum = a + b;
+    return sum;
   }
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(a, b){
+  let product = a * b;
+   return product;
   }
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
-function greeting(/*Your Code Here */){
-   return /*Your Code Here */
+function greeting(first, last){
+   return `Hello ${first} ${last}, nice to meet you!`
   }
   
   // 🦁🦁🦁 Step 3: Check your work by un-commenting the following calls to consume(): 🦁🦁🦁 
